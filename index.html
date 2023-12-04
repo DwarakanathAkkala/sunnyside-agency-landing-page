@@ -8,6 +8,13 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
+  <link rel="stylesheet" href="./styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,7 +22,64 @@
   </style>
 </head>
 <body>
-  About
+  <header>
+    <nav class="nav container grid">
+      <div class="navbar">
+        <a href="#" class="nav_logo">
+          <h1>sunnyside</h1></a>
+
+        <div class="nav_toggle" id="nav-toggle"><img src="./images/icon-hamburger.svg" alt=""></div>
+      </div>
+
+
+      <div class="nav_menu" id="nav-menu">
+
+        <!-- Nav Link 1 -->
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#about" class="nav_link">About</a>
+          </li>
+        </ul>
+
+        <!-- Nav Link 2 -->
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#services" class="nav_link">Services</a>
+          </li>
+        </ul>
+
+        <!-- Nav Link 3 -->
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#projects" class="nav_link">Projects</a>
+          </li>
+        </ul>
+
+        <!-- Nav Link 4 -->
+        <ul class="nav_list grid">
+          <li class="nav_item">
+            <a href="#contact" class="nav_link link_active">CONTACT</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+  </header>
+  <main>
+
+    
+    <!-- Home Section -->
+    <section class="home">
+
+      <div class="page-title">
+        <h1>WE ARE CREATIVES</h1>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- About
   Services
   Projects
   Contact
@@ -58,11 +122,13 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>

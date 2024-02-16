@@ -15,78 +15,72 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <header>
-    <nav class="nav container grid">
-      <div class="navbar">
-        <a href="#" class="nav_logo">
-          <h1>sunnyside</h1></a>
 
-        <div class="nav_toggle" id="nav-toggle"><img src="./images/icon-hamburger.svg" alt=""></div>
+  <!-- Header -->
+  <header>
+
+    <nav class="nav container">
+
+      <div class="navbar">
+
+        <img src="/images/logo.svg" alt="Logo">
+
+        <div class="nav_toggle" id="nav-toggle"><img src="./images/icon-hamburger.svg" alt="Nav Toggle Icon"></div>
+
       </div>
 
-
       <div class="nav_menu" id="nav-menu">
-
-        <!-- Nav Link 1 -->
-        <ul class="nav_list grid">
-          <li class="nav_item">
-            <a href="#about" class="nav_link">About</a>
-          </li>
-        </ul>
-
-        <!-- Nav Link 2 -->
-        <ul class="nav_list grid">
-          <li class="nav_item">
-            <a href="#services" class="nav_link">Services</a>
-          </li>
-        </ul>
-
-        <!-- Nav Link 3 -->
-        <ul class="nav_list grid">
-          <li class="nav_item">
-            <a href="#projects" class="nav_link">Projects</a>
-          </li>
-        </ul>
-
-        <!-- Nav Link 4 -->
-        <ul class="nav_list grid">
-          <li class="nav_item">
-            <a href="#contact" class="nav_link link_active">CONTACT</a>
-          </li>
-        </ul>
-
+        <a href="#about" class="nav_link">About</a>
+        <a href="#services" class="nav_link">Services</a>
+        <a href="#projects" class="nav_link">Projects</a>
+        <a href="#contact" class="nav_link contact_link">Contact</a>
       </div>
 
     </nav>
+
   </header>
+
+  <!-- Main Content -->
   <main>
 
-    
     <!-- Home Section -->
     <section class="home">
 
+      <picture id="launch-image">
+        <source srcset="./images/mobile/image-header.jpg" media="(max-width: 719px)" type="image/jpg">
+        <source srcset="./images/desktop/image-header.jpg" media="(min-width: 720px)" type="image/jpg">
+        <img src="./images/mobile/image-header.jpg" alt="Home Image">
+      </picture>
+
       <div class="page-title">
-        <h1>WE ARE CREATIVES</h1>
+        <h1 class="heading">WE ARE CREATIVES</h1>
+      </div>
+
+      <div class="arrowContainer">
+        <img src="./images/icon-arrow-down.svg" alt="Arrow Down">
       </div>
 
     </section>
+
+    <!-- About Section -->
+    <!-- <section class="about" id="about">
+
+      <article class="transform-article">
+
+        <div>
+          <img src="./images/mobile/image-transform.jpg" class="transform-img"  alt="Image Containing an egg which indicates it will transform">
+        </div>
+
+        <div class="transform-content">ABCD</div>
+        
+      </article>
+    </section> -->
+
   </main>
 
-  <!-- About
-  Services
-  Projects
-  Contact
-
-  We are creatives
-
-  Transform your brand
+  <!--Transform your brand
 
   We are a full-service creative agency specializing in helping brands grow fast. 
   Engage your clients through compelling visuals that do most of the marketing for you.
@@ -123,11 +117,6 @@
   Services
   Projects
   Contact -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 
   <script src="./script.js"></script>
 </body>

@@ -30,8 +30,14 @@
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
 
-  /* Font and Typography */
-  --body-font:  'Poppins', sans-serif;
+}
+
+.fraunces-txt {
+  font-family: "Fraunces", serif;
+}
+
+.barlow-txt {
+  font-family: "Barlow";
 }
 
 /* Base CSS -- Reset Browser Defaults */
@@ -187,14 +193,61 @@ nav {
 }
 
 /* Transform Section */
-.about {
-  display: relative;
-  margin-top: 10vh;
+.article-content {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  row-gap: 1rem;
+  padding: 2rem 1.5rem;
 }
 
-.transform-img {
+.article-content h2 {
+  font-size: 2rem;
+  color: var(--desaturated-blue-dark);
+}
+
+.article-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--grayish-blue-very-dark);
+}
+
+.article-content a {
+  text-transform: uppercase;
+  position: relative;
+  color: var(--desaturated-blue-dark);
+  text-decoration: none;
+}
+
+.article-content a::before {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 8rem;
+  height: 7px;
+  transform: skew(0deg) translateX(-50%);
+  
+  opacity: 0.3;
+  z-index: -1;
+  border-radius: 3rem;
+}
+
+.yellow-bg::before {
+  background: var(--yellow);
+}
+
+.soft-red-bg::before {
+  background: var(--soft-red);
+}
+
+
+
+.transform-img, .image-stand-out {
   width: 100%;
 }
+
+
 
 @media (min-width:1440px) {
 

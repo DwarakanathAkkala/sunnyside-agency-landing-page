@@ -51,6 +51,12 @@ body {
 
 /* Custom CSS */
 
+.home {
+  background-image: url(./images/mobile/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .heading{
   display: grid;
   text-align: center;
@@ -96,7 +102,7 @@ picture img {
 .arrowContainer {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  padding: 4rem 0 8rem 0;
 }
 
 nav {
@@ -175,11 +181,27 @@ nav {
   font-family: 'Fraunces';
   font-size: 1rem;
   text-transform: uppercase;
-  padding: 1rem 0;
+  padding: 1rem 4rem;
+  align-self: center; 
   border-radius: 2rem;
 }
 
+/* Transform Section */
+.about {
+  display: relative;
+  margin-top: 10vh;
+}
+
+.transform-img {
+  width: 100%;
+}
+
 @media (min-width:1440px) {
+
+  .home {
+    background-image: url(/images/desktop/image-header.jpg);
+    height: 100vh;
+  }
 
   .page-title {
     padding-top: 25vh;
@@ -228,7 +250,9 @@ nav {
   }
 
   .arrowContainer {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    /* padding: rem 0 15rem 0; */
+    padding-top: 6rem;
   }
 
 }

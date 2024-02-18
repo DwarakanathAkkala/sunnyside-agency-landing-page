@@ -86,6 +86,7 @@ h1 {
 nav {
   background-color: transparent;
   color: var(--main-color);
+  background-color: #3ebffe;
   grid-template-columns: 1fr 1fr;
   position: fixed;
   width: 100%;
@@ -241,10 +242,34 @@ nav {
   background: var(--soft-red);
 }
 
-.image-stand-out, .image-transform {
+.image-stand-out, .image-transform, .image-graphic-design, .image-photography {
   width: 100%;
 }
 
+
+/* Services */
+
+#figure-graphic-design, #figure-photography {
+  display: grid;
+  position: absolute;
+}
+
+.services-article > .article-content {
+  display: grid;
+  position: relative;
+  padding-top: 100%;
+}
+
+.services-article h2 {
+  color: var(--desaturated-cyan-dark);
+  margin-top: 1rem;
+}
+
+.services-article p {
+  font-size: 1rem;
+  margin: 1rem auto 2rem auto;
+  line-height: 1.5rem;
+}
 
 
 @media (min-width:1440px) {

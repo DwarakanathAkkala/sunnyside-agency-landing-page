@@ -99,12 +99,6 @@ nav {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-picture img {
-  z-index: -1;
-  position: fixed;
-  width: 100%;
-}
-
 /* Arrow Image */
 .arrowContainer {
   display: flex;
@@ -379,10 +373,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-/* 
-  .services .article-content {
-
-  } */
 
   .image-graphic-design, .image-photography {
     width: 50vw;

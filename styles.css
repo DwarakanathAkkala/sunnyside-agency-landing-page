@@ -328,6 +328,19 @@ nav {
   color: var(--grayish-blue-dark);
 }
 
+/* -------- */
+/* Projects */
+/* -------- */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects img {
+  width: 100%;
+}
+
+
 
 @media (min-width:1440px) {
 
@@ -479,6 +492,26 @@ nav {
 
   .testimonial span {
     font-size: 0.9rem;
+  }
+
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #milk-bottles-image {
+    content: url(images/desktop/image-gallery-milkbottles.jpg);
+  }
+
+  #orange-image {
+    content: url(images/desktop/image-gallery-orange.jpg);
+  }
+
+  #cone-image {
+    content: url(images/desktop/image-gallery-cone.jpg);
+  }
+
+  #sugar-cubes-image {
+    content: url(images/desktop/image-gallery-sugarcubes.jpg);
   }
 
 }

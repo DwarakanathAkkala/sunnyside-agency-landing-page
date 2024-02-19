@@ -39,6 +39,10 @@
   font-family: "Barlow";
 }
 
+[aria-hidden="true"] {
+  visibility: hidden;
+}
+
 /* Base CSS -- Reset Browser Defaults */
 *{
   box-sizing: border-box;

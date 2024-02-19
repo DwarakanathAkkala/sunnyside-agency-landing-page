@@ -29,7 +29,6 @@
   --grayish-blue-dark: hsl(232, 10%, 55%);
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
-
 }
 
 .fraunces-txt {
@@ -53,6 +52,7 @@ html {
   
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* Custom CSS */
@@ -341,6 +341,44 @@ nav {
 }
 
 
+/* ------ */
+/* Footer */
+/* ------ */
+footer {
+  background-color: #90d4c5;
+  display: grid;
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
+
+.footer-logo {
+  display: grid;
+  justify-self: center;
+  transform: scale(1.5);
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4rem;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.footer-navigation a {
+  color: var(--moderate-cyan-dark);
+  text-decoration: none;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
 
 @media (min-width:1440px) {
 

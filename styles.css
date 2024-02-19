@@ -446,8 +446,16 @@ footer {
     flex-direction: row-reverse;
   }
 
-  .figure-stand-out, .stand-out-content, .transform-content, .figure-transform  {
+  .image-stand-out, .image-transform, .stand-out-content, .transform-content  {
     width: 50vw;
+  }
+
+  .image-stand-out {
+    content: url(images/desktop/image-stand-out.jpg);
+  }
+
+  .image-transform {
+    content: url(images/desktop/image-transform.jpg);
   }
 
   .article-content {
